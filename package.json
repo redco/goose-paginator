@@ -1,0 +1,57 @@
+{
+  "private": true,
+  "version": "1.0.0",
+  "name": "goose-paginator",
+  "main": "lib/Paginator.js",
+  "repository": "redco/goose-paginator",
+  "description": "Paginator enriches ability to paginate over the pages in Goose Parser",
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "paginator",
+    "paginate",
+    "parser",
+    "crawler",
+    "crawling",
+    "spider",
+    "scraper",
+    "scraping",
+    "site",
+    "page",
+    "dom",
+    "javascript"
+  ],
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "debug": "^3.0.1",
+    "promise-any": "^0.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "eslint": "^3.13.1",
+    "eslint-config-airbnb-base": "^11.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0",
+    "lint-staged": "^3.2.6",
+    "pre-commit": "^1.2.2",
+    "rimraf": "^2.5.4"
+  },
+  "pre-commit": "lint:staged",
+  "lint-staged": {
+    "lib/*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore ./lib",
+    "lint:fix": "eslint --ignore-path .gitignore --fix ./lib",
+    "lint:staged": "lint-staged",
+    "build": "node build.js",
+    "prepublish": "node build"
+  }
+}
