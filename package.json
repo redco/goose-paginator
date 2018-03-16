@@ -1,6 +1,6 @@
 {
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "goose-paginator",
   "main": "lib/Paginator.js",
   "repository": "redco/goose-paginator",
@@ -36,6 +36,8 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^3.0.2",
     "eslint-plugin-react": "^6.9.0",
+    "goose-abstract-environment": "^1.0.10",
+    "goose-parser": "^0.3.0-alpha.5",
     "lint-staged": "^3.2.6",
     "pre-commit": "^1.2.2",
     "rimraf": "^2.5.4"
